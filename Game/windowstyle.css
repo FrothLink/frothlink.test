@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Nemen'; /* Name your font family */
+    src: url('/Assets/Nemen_Standard.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+body{
+    background-color: #202020;
+    color: #f0f0f0;
+    font-family: 'Consolas', monospace;
+    margin: 0;
+    height: 100vh;
+}
+
+.terminal-window {
+    background-color: #202020;
+    width: 100%;
+    height: 97%;
+    padding-bottom: -26px;
+    float: left;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.terminal-body {
+    background-color: #2f2f2f;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    height: 26px;
+    width: 100%;
+    float: left;
+    overflow: auto;
+}
+
+.command-line {
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.5;
+    position: absolute;
+    width: 99.5%;
+    display: flex;
+    padding-left: 2px;
+}
+
+.command-line span {
+    color: #f0f0f0;
+}
+
+.command-line input {
+    background-color: transparent;
+    caret-color: #f0f0f0;
+    border: none;
+    color: #f0f0f0;
+    font-family: 'Consolas', monospace;
+    font-size: 16px;
+    outline: none;
+    width: calc(100% - 20px);
+}
+
+.help-text-container {
+    margin-right: 50px;
+    margin-top: 0px;
+}
